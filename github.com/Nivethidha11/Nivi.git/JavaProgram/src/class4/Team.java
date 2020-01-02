@@ -1,10 +1,14 @@
 package class4;
 
+import java.util.Scanner;
 public class Team 
 {
-	String name,city;
+	Scanner q=new Scanner(System.in);
+	String name=q.next();
+	String city=q.next();
 
-	public String getName() {
+	public String getName() 
+	{
 		return name;
 	}
 
