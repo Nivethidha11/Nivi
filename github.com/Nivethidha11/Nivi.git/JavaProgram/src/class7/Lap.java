@@ -1,6 +1,4 @@
-package class5;
-
-
+package class7;
 
 public class Lap 
 {
@@ -15,10 +13,10 @@ public class Lap
 		this.player = player;
 		this.time = time;
 	}
-	public int getNo() {
+	public byte getNo() {
 		return no;
 	}
-	public int getThr() {
+	public byte getThr() {
 		return thr;
 	}
 	public String getPlayer() {
@@ -26,9 +24,5 @@ public class Lap
 	}
 	public float getTime() {
 		return time;
-	}
-	void display()
-	{
-		System.out.print("Lap: "+no+"\n"+"Throws: "+thr+"\n"+"Fastest Player: "+player+"\n"+"Fastest Time: "+time+"s"+"\n");
 	}
 }

@@ -1,14 +1,12 @@
-package class7;
+package class8;
 
 import java.util.Scanner;
 
-import class7.Lap;
+import class8.LapManager;
 
-public class Main 
-{
+public class Main {
 
-	public static void main(String[] args) 
-	{
+	public static void main(String[] args) {
 		Scanner q=new Scanner(System.in);
 		System.out.println("Enter the number of Laps:");
 		int num=q.nextByte();
@@ -24,10 +22,7 @@ public class Main
 			System.out.print("\n");
 			t[i]=new LapManager(no,thr,player,time);
 		}
-		for(i=0;i<num;i++)
-		{
-			t[i].display();
-		}
-		
+		t[i].display();
 	}
+
 }

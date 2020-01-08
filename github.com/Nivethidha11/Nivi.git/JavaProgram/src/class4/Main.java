@@ -1,13 +1,16 @@
 package class4;
 
+import java.util.Scanner;
+
 public class Main {
 
 	public static void main(String[] args) 
 	{
-		
-		Team t=new Team();
-		System.out.println(t.getName());
-		System.out.println(t.getCity());
+		Scanner q=new Scanner(System.in);
+		String name=q.next();
+		String city=q.next();
+		Team t=new Team(name,city);
+		t.display();
 	}
 
 }

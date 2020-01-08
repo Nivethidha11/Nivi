@@ -19,6 +19,7 @@ public class Swing1 {
 	private JTextField d;
 	private JTextField txtDistanceCovered;
     private JTextArea print;
+    private JTextField textField;
 	/**
 	 * Launch the application.
 	 */
@@ -98,6 +99,14 @@ public class Swing1 {
 		print = new JTextArea();
 		print.setBounds(234, 275, 117, 35);
 		panel.add(print);
+		
+		JPanel panel_1 = new JPanel();
+		panel_1.setBounds(59, 171, 10, 10);
+		panel.add(panel_1);
+		
+		textField = new JTextField();
+		textField.setBounds(180, 127, 86, 20);
+		panel.add(textField);
+		textField.setColumns(10);
 	}
-
 }

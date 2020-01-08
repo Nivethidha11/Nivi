@@ -76,7 +76,7 @@ public class swing1 {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		JPanel panel = new JPanel();
-		frame.getContentPane().add(panel, BorderLayout.CENTER);
+		frame.getContentPane().add(panel, BorderLayout.WEST);
 		panel.setLayout(null);
 		
 		JPanel panel_1 = new JPanel();
