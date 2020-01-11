@@ -2,12 +2,15 @@ package Abstraction4;
 
 import java.util.Scanner;
 
-public class User
+public  class User
 {
 	String name,mobile,email;
 	float bcash;
+	String bookingdate;
+	String bookingid;
+	float bcashpaid;
 	Booking[] list;
-	User(String name,String email,String mobile,float bcash)
+	User(String name,String email,String mobile,float bcash,String bookingdate,String bookingid,float bcashpaid)
 	{
 		super();
 		this.name = name;
@@ -74,4 +77,6 @@ public class User
 		float bookingamount=amount+bcash;
 		System.out.println("Recharge BCash "+bookingamount);
 	}
+	public float abstract bookroom();
+	public float abstract cancelroom();
 }

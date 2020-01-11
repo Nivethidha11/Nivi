@@ -1,11 +1,9 @@
-package class8;
+package class9;
 
 import java.util.Scanner;
 
-public class LapManager
-{
-	
-	private int number;
+public class LapManager {
+private int number;
 	
 	String[] c=new String[20]; 
 	public LapManager(String b[],int num) 
@@ -84,4 +82,5 @@ public class LapManager
 		}
 	      System.out.println(max+" throws were made in lap "+split1[index]);
 	}
+
 }

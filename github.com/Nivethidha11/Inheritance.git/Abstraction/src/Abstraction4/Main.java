@@ -31,8 +31,8 @@ public class Main {
 		
 		System.out.println("1. Update Details\n2. Recharge bcash\n3. Book room\n4. Cancel room\n5. Add Coupon\n6. Apply discount\nEnter the choice");
 		int ch=s.nextInt();
-		User u=new User(name,email,mobile,bcash);
-		RegularUser ru=new RegularUser(bookingid,bookingdate,bcashpaid);
+		User u=new User(name,email,mobile,bcash,bookingdate,bookingid,bcashpaid);
+		RegularUser ru=new RegularUser();
 		if(ch==1)
 		{
 			
@@ -44,7 +44,7 @@ public class Main {
 		}
 		else if(ch==3)
 		{
-			
+			ru.bookroom();
 		}
 	}
 

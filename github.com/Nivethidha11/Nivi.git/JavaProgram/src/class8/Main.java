@@ -11,7 +11,8 @@ public class Main {
 		System.out.println("Enter the number of Laps:");
 		int num=q.nextByte();
 		int i;
-		LapManager t[]=new LapManager[num];
+		String a[]=new String[num];
+		Lap t[]=new Lap[num];
 		for(i=0;i<num;i++)
 		{
 			System.out.println("Enter the Details of lap :");
@@ -20,9 +21,32 @@ public class Main {
 			String player=q.next();
 			float time=q.nextFloat();
 			System.out.print("\n");
-			t[i]=new LapManager(no,thr,player,time);
+			t[i]=new Lap(no,thr,player,time);
+			a[i]=t[i].toString();
 		}
-		t[i].display();
+		int ch;
+		LapManager lm=new LapManager(a,num); 
+		do
+		{
+			System.out.println("Lap Manager\n1. Lap Details\n2. Fastest in Lap\n3. Maximum Throws\n4. Exit\nEnter the choice");
+			ch=q.nextInt();
+			if(ch==1)
+			{
+				lm.display();
+			}
+			else if(ch==2)
+			{
+				lm.fast();
+			}
+			else if(ch==3)
+			{
+				lm.maxthr();
+			}
+			else if(ch==4)
+			{
+				System.out.println("Thank you!");
+			}
+		}while(ch>0 && ch<5);
 	}
 
 }

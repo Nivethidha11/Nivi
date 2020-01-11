@@ -38,3 +38,4 @@ public class Dark extends Star
 		return fin;
 	}
 }
+

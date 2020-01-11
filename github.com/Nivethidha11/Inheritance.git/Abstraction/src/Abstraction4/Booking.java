@@ -1,6 +1,6 @@
 package Abstraction4;
 
-public abstract class Booking 
+public class Booking 
 {
 	String bookingid,bookingdate;
 	float bcashpaid;
@@ -29,6 +29,5 @@ public abstract class Booking
 	public void setBcashpaid(float bcashpaid) {
 		this.bcashpaid = bcashpaid;
 	}
-	public float abstract bookroom();
-	public float abstract cancelroom();
+	
 }
